@@ -1,16 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Personal_Site</title>
     <base href="~/" />
-
-    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="~/css/reset.css"> <!-- CSS reset -->
+	<script src="~/lib/modernizr/modernizr.min.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/dist/main.css"> <!-- CSS reset -->
 </head>
 <body>
     @RenderBody()
 
     @RenderSection("scripts", required: false)
+	<script src="~/lib/jquery/jquery.min.js"></script>
+	<script src="~/lib/jquery.menu-aim.js"></script>
+	<script src="~/lib/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
